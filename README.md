@@ -1,4 +1,4 @@
-# RP1_VisualStudio
+# RP1_SiteWeb
 Dépôt RP1 Guichard Rafaël BTS SIO : code source du site web, bases de données SQL, et documentations annexes.
 
 GSB-SHOP
