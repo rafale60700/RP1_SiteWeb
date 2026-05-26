@@ -1,0 +1,25 @@
+# GSB-SHOP – Protection des dossiers sensibles
+# Bloquer l'accès direct aux dossiers config/, models/, sql/
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Bloquer accès direct à config/
+    RewriteRule ^config/ - [F,L]
+
+    # Bloquer accès direct à models/
+    RewriteRule ^models/ - [F,L]
+
+    # Bloquer accès direct à sql/
+    RewriteRule ^sql/ - [F,L]
+
+    # Bloquer accès direct à templates/
+    RewriteRule ^templates/ - [F,L]
+</IfModule>
+
+# Désactiver le listing des répertoires
+Options -Indexes
+
+# Page d'erreur par défaut
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
